@@ -2,7 +2,7 @@
   "name": "research-website-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tovacinni.github.io/research-website-template",
+  "homepage": "https://jinschofield.github.io/portfolio-new",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
