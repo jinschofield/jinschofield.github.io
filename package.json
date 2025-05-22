@@ -2,7 +2,7 @@
   "name": "research-website-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jinschofield.github.io/portfolio-new",
+  "homepage": "https://jinschofield.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
