@@ -10,15 +10,6 @@ export interface GalleryItem {
 
 export const galleryData: GalleryItem[] = [
   {
-    id: "yc-startup-school",
-    title: "YC AI Startup School",
-    description: "With friends from Princeton at Y Combinator's AI Startup School",
-    imageUrl: "/images/yc-startup-school.HEIC",
-    date: "2025",
-    location: "San Francisco, CA",
-    event: "YC AI Startup School"
-  },
-  {
     id: "nyc-rl-workshop",
     title: "New York Reinforcement Learning Workshop",
     description: "With members of the Princeton RL Lab at the New York Reinforcement Learning Workshop",
@@ -26,6 +17,15 @@ export const galleryData: GalleryItem[] = [
     date: "2025",
     location: "New York, NY",
     event: "NY RL Workshop at Amazon Office"
+  },
+  {
+    id: "yc-startup-school",
+    title: "YC AI Startup School",
+    description: "With friends from Princeton at Y Combinator's AI Startup School",
+    imageUrl: "/images/yc-startup-school.HEIC",
+    date: "2025",
+    location: "San Francisco, CA",
+    event: "YC AI Startup School"
   },
   {
     id: "acs-team",

@@ -11,7 +11,7 @@ export const awardsData: Award[] = [
     date: "2025",
     title: "1st Place, Jane Street Estimathon at Harvard Undergraduate Trading Competition",
     description: "Won <strong>first place</strong> in the <strong>Estimathon</strong> competition at the <strong>Harvard Undergraduate Trading Competition</strong>.",
-    logo: "/images/janestreet.png"
+    logo: "/images/janestreet-logo.png"
   },
   {
     date: "2024",

@@ -15,8 +15,36 @@ import { sectionOrder, Section } from "@/data/section-order";
 import { galleryData } from "@/data/gallery";
 
 export default function Home() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#FFFCF8]">
+      {/* Navigation Tabs */}
+      <nav className="sticky top-0 bg-[#FFFCF8] border-b border-zinc-200 z-10">
+        <div className="max-w-screen-lg mx-auto px-6">
+          <div className="flex gap-8 py-4 overflow-x-auto">
+            {sectionOrder.map((section) => (
+              <button
+                key={section}
+                onClick={() => scrollToSection(section)}
+                className="text-sm font-medium text-zinc-600 hover:text-zinc-900 whitespace-nowrap transition-colors"
+              >
+                {section === Section.Education && "Education"}
+                {section === Section.Experience && "Experience"}
+                {section === Section.Publications && "Publications"}
+                {section === Section.Portfolio && "Projects"}
+                {section === Section.Awards && "Awards"}
+                {section === Section.Gallery && "Gallery"}
+              </button>
+            ))}
+          </div>
+        </div>
+      </nav>
       <div className="max-w-screen-lg mx-auto px-6 py-12">
         {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-1">
@@ -39,7 +67,7 @@ export default function Home() {
                 case Section.Awards:
                   return (
                     awardsData.length > 0 && (
-                      <section key={sectionName} className="mb-8">
+                      <section key={sectionName} id={sectionName} className="mb-8">
                         <h2 className="font-serif text-l mb-4 tracking-wide uppercase">
                           Awards
                         </h2>
@@ -56,7 +84,7 @@ export default function Home() {
                 case Section.Education:
                   return (
                     educationData.length > 0 && (
-                      <section key={sectionName} className="mb-8">
+                      <section key={sectionName} id={sectionName} className="mb-8">
                         <h2 className="font-serif text-zinc-700 mb-4 tracking-wide uppercase">
                           Education
                         </h2>
@@ -72,7 +100,7 @@ export default function Home() {
                 case Section.Experience:
                   return (
                     experienceData.length > 0 && (
-                      <section key={sectionName} className="mb-8">
+                      <section key={sectionName} id={sectionName} className="mb-8">
                         <h2 className="font-serif text-md mb-4 tracking-wide uppercase">
                           Experience
                         </h2>
@@ -90,7 +118,7 @@ export default function Home() {
                 case Section.Portfolio:
                   return (
                     portfolioData.length > 0 && (
-                      <section key={sectionName} className="mb-8">
+                      <section key={sectionName} id={sectionName} className="mb-8">
                         <h2 className="font-serif text-md mb-4 tracking-wide uppercase">
                           Other Projects
                         </h2>
@@ -105,7 +133,7 @@ export default function Home() {
                 case Section.Publications:
                   return (
                     (researchData.length > 0 || publicationData.length > 0) && (
-                      <section key={sectionName} className="mb-8">
+                      <section key={sectionName} id={sectionName} className="mb-8">
                         <h2 className="font-serif text-md mb-4 tracking-wide uppercase">
                           Publications
                         </h2>
@@ -123,31 +151,34 @@ export default function Home() {
                 case Section.Gallery:
                   return (
                     galleryData.length > 0 && (
-                      <section key={sectionName} className="mb-8">
+                      <section key={sectionName} id={sectionName} className="mb-8">
                         <h2 className="font-serif text-md mb-4 tracking-wide uppercase">
                           Photo Gallery
                         </h2>
-                        <div className="space-y-6">
-                          {galleryData.map((photo, index) => (
-                            <div key={index} className="border border-zinc-200 rounded-lg overflow-hidden">
-                              <img
-                                src={photo.imageUrl}
-                                alt={photo.title}
-                                className="w-full h-64 object-cover"
-                              />
-                              <div className="p-4">
-                                <h3 className="font-semibold text-lg mb-1">{photo.title}</h3>
-                                <p className="text-sm text-zinc-600 mb-2">{photo.description}</p>
-                                {(photo.date || photo.location) && (
-                                  <div className="text-xs text-zinc-500">
-                                    {photo.date && <span>{photo.date}</span>}
-                                    {photo.date && photo.location && <span> • </span>}
-                                    {photo.location && <span>{photo.location}</span>}
-                                  </div>
-                                )}
+                        <div className="overflow-x-auto pb-4">
+                          <div className="flex gap-4 w-max">
+                            {galleryData.map((photo, index) => (
+                              <div key={index} className="border border-zinc-200 rounded-lg overflow-hidden flex-shrink-0 w-80">
+                                <img
+                                  src={photo.imageUrl}
+                                  alt={photo.title}
+                                  className="w-full h-48 object-cover object-center"
+                                  loading="lazy"
+                                />
+                                <div className="p-4">
+                                  <h3 className="font-semibold text-lg mb-1">{photo.title}</h3>
+                                  <p className="text-sm text-zinc-600 mb-2">{photo.description}</p>
+                                  {(photo.date || photo.location) && (
+                                    <div className="text-xs text-zinc-500">
+                                      {photo.date && <span>{photo.date}</span>}
+                                      {photo.date && photo.location && <span> • </span>}
+                                      {photo.location && <span>{photo.location}</span>}
+                                    </div>
+                                  )}
+                                </div>
                               </div>
-                            </div>
-                          ))}
+                            ))}
+                          </div>
                         </div>
                       </section>
                     )

@@ -59,9 +59,10 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
           )}
         </p>
         {aboutMe.funDescription && (
-          <p className="text-zinc-500 text-xs leading-relaxed mb-6">
-            {aboutMe.funDescription}
-          </p>
+          <p
+            className="text-zinc-500 text-xs leading-relaxed mb-6"
+            dangerouslySetInnerHTML={{ __html: aboutMe.funDescription }}
+          />
         )}
         {aboutMe.resumeUrl && (
           <div className="flex gap-6 mb-6">
