@@ -5,7 +5,7 @@ export const researchData: Award[] = [
     date: "2025",
     title: "BuilderBench — A Benchmark for Generalist Agents",
     description: "Ghugare et al.<br><br>A comprehensive benchmark for evaluating generalist agents on 3D construction tasks.",
-    logo: undefined
+    logo: "/images/princeton-logo.png"
   },
   {
     date: "2021",
