@@ -22,7 +22,7 @@ export const aboutMe: AboutMe = {
   title: "Computer Science Student (Minor in Mathematics)",
   institution: "Princeton University",
   description:
-    "Hi! 👋 I'm a <strong>computer science</strong> student with a minor in <strong>mathematics</strong> at <strong>Princeton University</strong>. I research at the intersection of <strong>causal inference</strong> and <strong>machine learning</strong>, exploring <strong>robust</strong>, <strong>interpretable</strong> systems for <strong>cause-and-effect reasoning</strong>. I'm passionate about engineering <strong>ML systems</strong> that are not only <strong>theoretically sound</strong> but also <strong>practical</strong> and <strong>impactful</strong>.",
+    "Hi! 👋 I'm a <strong>computer science</strong> student with a minor in <strong>mathematics</strong> at <strong>Princeton University</strong>. I research <strong>reinforcement learning</strong>, focusing on <strong>exploration algorithms</strong> using <strong>contrastive representations</strong> and <strong>temporal abstractions</strong>. I also research <strong>efficient computer vision</strong>, developing <strong>real-time detection models</strong> with <strong>reduced computational complexity</strong>. My work combines <strong>fundamental ML research</strong> (parameter-efficient architectures, self-supervised learning) with <strong>production-grade engineering</strong> (75% latency reduction, scalable synthetic data pipelines). I'm passionate about advancing <strong>general-purpose agents</strong> through <strong>representation learning</strong> and <strong>efficient architectures</strong>.",
   email: "jin.schofield@princeton.edu",
   imageUrl: "/images/profile.png", // Your profile photo
   blogUrl: "https://jinschofield.com",
@@ -32,5 +32,5 @@ export const aboutMe: AboutMe = {
   githubUsername: "jinschofield",
   linkedinUsername: "jin-schofield",
   institutionUrl: "https://www.princeton.edu",
-  funDescription: "Hi! 👋 I'm a computer science student with a minor in mathematics at Princeton University. I research at the intersection of causal inference and machine learning, exploring robust, interpretable systems for cause-and-effect reasoning. I'm passionate about engineering ML systems that are not only theoretically sound but also practical and impactful.",
+  funDescription: "Hi! 👋 I'm a computer science student with a minor in mathematics at Princeton University. I research reinforcement learning, focusing on exploration algorithms using contrastive representations and temporal abstractions. I also research efficient computer vision, developing real-time detection models with reduced computational complexity. My work combines fundamental ML research (parameter-efficient architectures, self-supervised learning) with production-grade engineering (75% latency reduction, scalable synthetic data pipelines). I'm passionate about advancing general-purpose agents through representation learning and efficient architectures.",
 };

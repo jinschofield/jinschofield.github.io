@@ -26,24 +26,23 @@ export interface Experience {
 
 export const experienceData: Experience[] = [
   {
-    date: "May 2025 — Present",
-    title: "🧠 Neuromorphic Reinforcement Learning Researcher",
-    company: "Eysenbach Lab, Princeton University 🐯",
+    date: "June 2025 — Present",
+    title: "🤖 Machine Learning Research Engineer Intern",
+    company: "Allen Control Systems",
     description:
-      "🔬 Researching contrastive reinforcement learning with Ben Eysenbach to create agents that leverage rich representations.",
-    supervisor: "Prof. Ben Eysenbach",
-    companyUrl: "https://princeton-rl.github.io/",
-    logo: "/images/princeton-logo.png"
+      "🚁 Re-architected core ML object detection model for drone detection, expanding coverage by ~50% in previously noisy camera FOV regions while reducing latency by ~75% compared to research paper implementation. Built pipeline for hyper-realistic synthetic training data generation, increasing accuracy by 5%.",
+    companyUrl: undefined,
+    logo: "/images/acs-logo.jpg"
   },
   {
     date: "May 2025 — Present",
-    title: "🧠 Research Assistant in Computational Cognitive Science",
-    company: "Griffiths Lab, Princeton University",
+    title: "🧠 Reinforcement Learning Researcher",
+    company: "Princeton Reinforcement Learning Lab and Griffiths Lab, Princeton University 🐯",
     description:
-      "🔍 Exploring Bayesian approaches to reinforcement learning and decision-making with Tom Griffiths.",
-    supervisor: "Prof. Tom Griffiths",
-    companyUrl: "https://cocosci.princeton.edu/",
-    logo: "/images/cog.png"
+      "🔬 Created novel uniformity-only contrastive representation learner that rivals variational auto-encoder accuracy with 11% fewer parameters. Co-authored BuilderBench paper (submitted to ICLR). Researching exploration for contrastive reinforcement learning using temporal representations.",
+    supervisor: "Prof. Ben Eysenbach & Prof. Tom Griffiths",
+    companyUrl: "https://princeton-rl.github.io/",
+    logo: "/images/princeton-logo.png"
   },
   {
     date: "Jan. 2025 — May 2025",

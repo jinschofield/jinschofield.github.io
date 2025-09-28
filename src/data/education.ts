@@ -20,6 +20,11 @@ export const educationData: Education[] = [
     description: "1590 SAT, 36 ACT, IB Diploma with 44/45",
     activities: "• 🧠 President of Princeton NeuroTech\n• 🤖 Officer of Princeton AI\n• 💼 Principal at Prospect Student Ventures (VC investing in Princeton-founded startups)\n• 🎤 Pitched to GenNTech, AstraZeneca, and Trinity Life Sciences with E-Club",
     coursework: [
+      "Advanced Algorithm Design (graduate course)",
+      "Optimization",
+      "Abstract algebra",
+      "Distributed Systems",
+      "Probability Theory",
       "Mathematical game theory",
       "Non-Euclidean geometry",
       "Reinforcement learning",
