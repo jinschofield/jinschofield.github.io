@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { EducationEntry } from "@/components/education-entry";
 import { educationData } from "@/data/education";
 import { ProfileSection } from "@/components/profile-section";
@@ -161,11 +162,12 @@ export default function Home() {
                           <div className="flex gap-4 w-max">
                             {galleryData.map((photo, index) => (
                               <div key={index} className="border border-zinc-200 rounded-lg overflow-hidden flex-shrink-0 w-80">
-                                <img
+                                <Image
                                   src={photo.imageUrl}
                                   alt={photo.title}
+                                  width={320}
+                                  height={192}
                                   className="w-full h-48 object-cover object-center"
-                                  loading="lazy"
                                 />
                                 <div className="p-4">
                                   <h3 className="font-semibold text-lg mb-1">{photo.title}</h3>
