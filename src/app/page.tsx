@@ -1,3 +1,5 @@
+"use client";
+
 import { EducationEntry } from "@/components/education-entry";
 import { educationData } from "@/data/education";
 import { ProfileSection } from "@/components/profile-section";
