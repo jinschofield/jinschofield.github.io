@@ -17,18 +17,6 @@ export interface Publication {
 
 export const publicationData: Publication[] = [
   {
-    date: "2025",
-    title: "BuilderBench — A Benchmark for Generalist Agents",
-    description: "A comprehensive benchmark for evaluating generalist agents on 3D construction tasks.",
-    conference: "Preprint submitted to ICLR 2026",
-    year: "2025",
-    authors: "Ghugare et al.",
-    tldr: "Co-authored benchmark and evaluated performance of various RL algorithms on general 3D block structure construction tasks.",
-    paperUrl: undefined,
-    codeUrl: undefined,
-    logo: undefined
-  },
-  {
     date: "2021",
     title: "Regressions to Understand Allergy Development",
     description: "Published research on 'Regressions to Understand Allergy Development' in the Vanderbilt Young Scientist Journal.",
