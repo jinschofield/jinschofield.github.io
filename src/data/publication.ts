@@ -15,21 +15,7 @@ export interface Publication {
   imageUrl?: string;
 }
 
-export const publicationData: Publication[] = [
-  {
-    date: "2021",
-    title: "Regressions to Understand Allergy Development",
-    description: "Published research on 'Regressions to Understand Allergy Development' in the Vanderbilt Young Scientist Journal.",
-    conference: "Vanderbilt Young Scientist Journal",
-    year: "2021",
-    authors: "Jin Schofield",
-    tldr: "Statistical analysis of allergy development factors using regression models.",
-    paperUrl: "/vanderbilt_schofield_statistics_allergies.pdf",
-    link: undefined,
-    codeUrl: undefined,
-    logo: undefined
-  }
-];
+export const publicationData: Publication[] = [];
 
 
 // src/data/sectionorder.ts
