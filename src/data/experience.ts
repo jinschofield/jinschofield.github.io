@@ -26,23 +26,29 @@ export interface Experience {
 
 export const experienceData: Experience[] = [
   {
-    date: "June 2025 — Present",
+    date: "May 2025 — Present",
+    title: "🧠 Reinforcement Learning Researcher",
+    company: "Princeton Reinforcement Learning Lab and Griffiths Lab, Princeton University 🐯",
+    description:
+      "🔬 Created novel uniformity-only contrastive representation learner that rivals variational auto-encoder accuracy with 11% fewer parameters. Co-authored BuilderBench paper (submitted to ICLR). Researching exploration for contrastive reinforcement learning using temporal representations.",
+    links: [
+      {
+        text: "Read the project",
+        url: "/Alignment_Free_Contrastive_Learning.pdf"
+      }
+    ],
+    supervisor: "Prof. Ben Eysenbach & Prof. Tom Griffiths",
+    companyUrl: "https://princeton-rl.github.io/",
+    logo: "/images/princeton-logo.png"
+  },
+  {
+    date: "June 2025 — August 2025",
     title: "🤖 Machine Learning Research Engineer Intern",
     company: "Allen Control Systems",
     description:
       "🚁 Re-architected core ML object detection model for drone detection, expanding coverage by ~50% in previously noisy camera FOV regions while reducing latency by ~75% compared to research paper implementation. Built pipeline for hyper-realistic synthetic training data generation, increasing accuracy by 5%.",
     companyUrl: undefined,
     logo: "/images/acs-logo.jpg"
-  },
-  {
-    date: "May 2025 — Present",
-    title: "🧠 Reinforcement Learning Researcher",
-    company: "Princeton Reinforcement Learning Lab and Griffiths Lab, Princeton University 🐯",
-    description:
-      "🔬 Created novel uniformity-only contrastive representation learner that rivals variational auto-encoder accuracy with 11% fewer parameters. Co-authored BuilderBench paper (submitted to ICLR). Researching exploration for contrastive reinforcement learning using temporal representations.",
-    supervisor: "Prof. Ben Eysenbach & Prof. Tom Griffiths",
-    companyUrl: "https://princeton-rl.github.io/",
-    logo: "/images/princeton-logo.png"
   },
   {
     date: "Jan. 2025 — May 2025",
@@ -60,8 +66,8 @@ export const experienceData: Experience[] = [
     description: "🤖 Developed novel conditional diffusion methods with Vikram Ramaswamy for cellular automata synthesis in Conway's Game of Life; researched diffusion for text language data with Diffusion-of-Thoughts.",
     links: [
       {
-        text: "Read the report",
-        url: "/conditional_diffusion_for_GOL_ramaswamy_schofield.pdf"
+        text: "Read the paper",
+        url: "/Conditional_Diffusion.pdf"
       }
     ],
     media: [
@@ -91,8 +97,8 @@ export const experienceData: Experience[] = [
     description: "🚀 Implemented novel in-context learning techniques within latent diffusion models, improving predictive accuracy by 26%.",
     links: [
       {
-        text: "Read the research",
-        url: "/in_context_learning_diffusion_perona_schofield.pdf"
+        text: "Read the paper",
+        url: "/In_Context_Learning_for_Diffusion.pdf"
       }
     ],
     media: [

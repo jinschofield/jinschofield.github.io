@@ -12,6 +12,7 @@ import { portfolioData } from "@/data/portfolio";
 import { PublicationEntry } from "@/components/publication-entry";
 import { publicationData } from "@/data/publication";
 import { sectionOrder, Section } from "@/data/section-order";
+import { galleryData } from "@/data/gallery";
 
 export default function Home() {
   return (
@@ -114,6 +115,38 @@ export default function Home() {
                           ))}
                           {publicationData.map((publication, index) => (
                             <PublicationEntry key={`pub-${index}`} publication={publication} />
+                          ))}
+                        </div>
+                      </section>
+                    )
+                  );
+                case Section.Gallery:
+                  return (
+                    galleryData.length > 0 && (
+                      <section key={sectionName} className="mb-8">
+                        <h2 className="font-serif text-md mb-4 tracking-wide uppercase">
+                          Photo Gallery
+                        </h2>
+                        <div className="space-y-6">
+                          {galleryData.map((photo, index) => (
+                            <div key={index} className="border border-zinc-200 rounded-lg overflow-hidden">
+                              <img
+                                src={photo.imageUrl}
+                                alt={photo.title}
+                                className="w-full h-64 object-cover"
+                              />
+                              <div className="p-4">
+                                <h3 className="font-semibold text-lg mb-1">{photo.title}</h3>
+                                <p className="text-sm text-zinc-600 mb-2">{photo.description}</p>
+                                {(photo.date || photo.location) && (
+                                  <div className="text-xs text-zinc-500">
+                                    {photo.date && <span>{photo.date}</span>}
+                                    {photo.date && photo.location && <span> • </span>}
+                                    {photo.location && <span>{photo.location}</span>}
+                                  </div>
+                                )}
+                              </div>
+                            </div>
                           ))}
                         </div>
                       </section>

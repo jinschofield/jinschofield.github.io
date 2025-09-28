@@ -19,12 +19,25 @@ export const publicationData: Publication[] = [
   {
     date: "2025",
     title: "BuilderBench — A Benchmark for Generalist Agents",
-    description: "Co-authored benchmark and evaluated performance of various RL algorithms on general 3D block structure construction tasks.",
-    conference: "Preprint submitted to ICLR",
-    year: "2026",
+    description: "A comprehensive benchmark for evaluating generalist agents on 3D construction tasks.",
+    conference: "Preprint submitted to ICLR 2026",
+    year: "2025",
     authors: "Ghugare et al.",
-    tldr: "A comprehensive benchmark for evaluating generalist agents on 3D construction tasks",
+    tldr: "Co-authored benchmark and evaluated performance of various RL algorithms on general 3D block structure construction tasks.",
     paperUrl: undefined,
+    codeUrl: undefined,
+    logo: undefined
+  },
+  {
+    date: "2021",
+    title: "Vanderbilt Young Scientist Journal Publication",
+    description: "Published research on 'Regressions to Understand Allergy Development' in the Vanderbilt Young Scientist Journal.",
+    conference: "Vanderbilt Young Scientist Journal",
+    year: "2021",
+    authors: "Jin Schofield",
+    tldr: "Statistical analysis of allergy development factors using regression models.",
+    paperUrl: undefined,
+    link: undefined,
     codeUrl: undefined,
     logo: undefined
   }
