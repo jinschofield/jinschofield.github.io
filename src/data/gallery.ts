@@ -11,7 +11,7 @@ export interface GalleryItem {
 export const galleryData: GalleryItem[] = [
   {
     id: "nyc-rl-workshop",
-    title: "New York Reinforcement Learning Workshop",
+    title: "NYRL 2025 at the Manhattan Amazon Office",
     description: "With members of the Princeton RL Lab at the New York Reinforcement Learning Workshop",
     imageUrl: "/images/nyc-rl-workshop.jpg",
     date: "2025",
