@@ -19,11 +19,11 @@ export const publicationData: Publication[] = [
   {
     date: "2025",
     title: "BuilderBench — A Benchmark for Generalist Agents",
-    description: "Co-authored benchmark and evaluated performance of various RL algorithms on general 3D block structure construction tasks.",
+    description: "A comprehensive benchmark for evaluating generalist agents on 3D construction tasks.",
     conference: "Preprint submitted to ICLR 2026",
     year: "2025",
     authors: "Ghugare et al.",
-    tldr: "A comprehensive benchmark for evaluating generalist agents on 3D construction tasks.",
+    tldr: "Co-authored benchmark and evaluated performance of various RL algorithms on general 3D block structure construction tasks.",
     paperUrl: undefined,
     codeUrl: undefined,
     logo: undefined
