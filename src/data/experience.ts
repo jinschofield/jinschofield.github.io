@@ -123,7 +123,7 @@ export const experienceData: Experience[] = [
   {
     date: "Sep. 2023 — Sep. 2024",
     title: "💼 Principal",
-    company: "Prospect Student Ventures 🚀",
+    company: "Princeton Student Ventures 🚀",
     description: "📊 Led due diligence and investment decisions for early-stage Princeton-affiliated startups. Evaluated pitch decks, financial models, and market opportunities. Contributed to the growth of student entrepreneurship at Princeton through mentorship and funding decisions.",
     companyUrl: "https://www.psv.vc/",
     logo: "/images/princeton-logo.png"
