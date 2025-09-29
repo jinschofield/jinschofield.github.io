@@ -123,7 +123,7 @@ export default function Home() {
                     portfolioData.length > 0 && (
                       <section key={sectionName} id={sectionName} className="mb-8">
                         <h2 className="font-serif text-md mb-4 tracking-wide uppercase">
-                          Other Projects
+                          Projects Not Associated with an Internship
                         </h2>
                         <div className="space-y-6">
                           {portfolioData.map((portfolio, index) => (
