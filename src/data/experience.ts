@@ -33,7 +33,7 @@ export const experienceData: Experience[] = [
       "🔬 Created novel uniformity-only contrastive representation learner that rivals variational auto-encoder accuracy with 11% fewer parameters. Co-authored BuilderBench paper (under review for ICLR 2026). Researching exploration for contrastive reinforcement learning using temporal representations.",
     links: [
       {
-        text: "Read the project",
+        text: "Read the working paper",
         url: "/Alignment_Free_Contrastive_Learning.pdf"
       }
     ],
