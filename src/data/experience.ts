@@ -92,7 +92,7 @@ export const experienceData: Experience[] = [
   },
   {
     date: "Jun. 2024 — Aug. 2024",
-    title: "🤖 AI Research & Software Engineering Intern",
+    title: "🤖 AI Research Intern",
     company: "Perona Computer Vision Lab, Caltech 🔬",
     description: "🚀 Implemented novel in-context learning techniques within latent diffusion models, improving predictive accuracy by 26%.",
     links: [
