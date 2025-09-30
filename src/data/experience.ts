@@ -145,7 +145,7 @@ export const experienceData: Experience[] = [
   {
     date: "Jun. 2021 — Aug. 2022",
     title: "👨‍💻 Software Engineering Intern",
-    company: "Hybrid Biomedical Optics Lab, York University",
+    company: "AfimaCheck",
     description: "🔧 Programmed back-end C++ code of SeekThermal infrared cameras for immunoassay bodily fluid THC detection device. Programmed GUI in Python.",
     companyUrl: "https://hbo.lab.yorku.ca/",
   },
