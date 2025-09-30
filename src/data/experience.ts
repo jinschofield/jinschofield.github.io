@@ -130,7 +130,7 @@ export const experienceData: Experience[] = [
   },
   {
     date: "Jul. 2023 — Aug. 2023",
-    title: "📊 Data Science & ML Intern",
+    title: "📊 ML Research Engineer Intern",
     company: "Oxford University Clinical Research Unit 🎓",
     description: "🔍 Analyzed large-scale patient datasets in R and built outcome prediction models using machine learning techniques.",
     links: [
