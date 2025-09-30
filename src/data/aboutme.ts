@@ -19,7 +19,7 @@ export interface AboutMe {
 
 export const aboutMe: AboutMe = {
   name: "Jin Schofield",
-  title: "Computer Science Student (Minor in Mathematics)",
+  title: "Computer Science and Math",
   institution: "Princeton University",
   description:
     "Hi! 👋 I'm Jin, a senior at Princeton studying CS and math. I research <strong>reinforcement learning</strong>, focusing on exploration algorithms using contrastive representations for combinatorial and strategic environments. I also have industry experience researching and engineering computationally efficient computer vision models for <strong>real-time detection</strong> in autonomous precision robotics. I am experienced in and very passionate about combining <strong>fundamental ML research</strong> (parameter-efficient architectures, self-supervised learning) with <strong>production-grade engineering</strong> (i.e. latency reduction, scalability). I want to contribute to the world by advancing general-purpose agents, embodied and otherwise, through representation learning and efficient architectures!",
