@@ -46,7 +46,7 @@ export const experienceData: Experience[] = [
     title: "🤖 Machine Learning Research Engineer Intern",
     company: "Allen Control Systems",
     description:
-      "🚁 Re-architected core ML object detection model, allowing for detection of drones in additional ~50% of camera FOV that was previously too noisy, for autonomous precision robotics system for drone interception using recently published research papers while decreasing latency by ~75% compared to research paper implementation. Constructed a pipeline for fine-grained control of hyper-realistic synthetic training data generation using recently published research papers, increasing accuracy by additional 5%.",
+      "🚁 Re-architected core ML object detection model, allowing for detection of drones in additional ~50% of camera FOV that was previously too noisy, for autonomous precision robotics system for drone interception using recently published research papers while decreasing latency by ~75% compared to research paper implementation. Constructed a pipeline for fine-grained control of hyper-realistic synthetic training data generation using recently published research papers, increasing accuracy by additional 5%. 🛠️ Tech: CUDA, PyTorch, AWS, TensorRT",
     companyUrl: undefined,
     logo: "/images/acs-logo.jpg"
   },
