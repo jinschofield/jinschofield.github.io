@@ -83,7 +83,7 @@ export const experienceData: Experience[] = [
   },
   {
     date: "Dec. 2024 — Jan. 2025",
-    title: "📊 Quantitative Research & Data Science Intern",
+    title: "📊 Quantitative Research Intern",
     company: "QuantCap, LLC",
     description:
       "📈 Built RNN, XGBoost, and Random Forest models to drive a trading strategy that achieved 305% cumulative returns over 12 months; constructed datasets using SQL and Python under mentorship from a BlackRock quantitative researcher and previous Meta data scientist.",
