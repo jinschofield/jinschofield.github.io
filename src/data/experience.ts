@@ -41,8 +41,8 @@ export const experienceData: Experience[] = [
         url: "https://arxiv.org/html/2510.06288v1",
         thumbnailSrc: "/images/builderbench-diagram.png",
         thumbnailAlt: "BuilderBench training and evaluation diagram (thumbnail)",
-        thumbnailWidth: 60,
-        thumbnailHeight: 36
+        thumbnailWidth: 80,
+        thumbnailHeight: 48
       },
       {
         text: "Read the alignment-free contrastive learning working paper",
