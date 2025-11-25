@@ -45,7 +45,7 @@ export const experienceData: Experience[] = [
         thumbnailHeight: 36
       },
       {
-        text: "Read the working paper",
+        text: "Read the alignment-free contrastive learning working paper",
         url: "/Alignment_Free_Contrastive_Learning.pdf"
       }
     ],
