@@ -8,6 +8,10 @@ export interface MediaItem {
 export interface LinkItem {
   text: string;
   url: string;
+  thumbnailSrc?: string;
+  thumbnailAlt?: string;
+  thumbnailWidth?: number;
+  thumbnailHeight?: number;
 }
 
 export interface Experience {
@@ -32,6 +36,14 @@ export const experienceData: Experience[] = [
     description:
       "🔬 Created novel uniformity-only contrastive representation learner that rivals variational auto-encoder accuracy with 11% fewer parameters. Co-authored BuilderBench paper (under review for ICLR 2026). Researching exploration for contrastive reinforcement learning using temporal representations. 🛠️ Tech: JAX, NumPy",
     links: [
+      {
+        text: "BuilderBench",
+        url: "https://arxiv.org/html/2510.06288v1",
+        thumbnailSrc: "/images/builderbench-diagram.png",
+        thumbnailAlt: "BuilderBench training and evaluation diagram (thumbnail)",
+        thumbnailWidth: 60,
+        thumbnailHeight: 36
+      },
       {
         text: "Read the working paper",
         url: "/Alignment_Free_Contrastive_Learning.pdf"
