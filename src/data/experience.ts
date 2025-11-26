@@ -34,7 +34,7 @@ export const experienceData: Experience[] = [
     title: "🧠 Reinforcement Learning Researcher",
     company: "Princeton Reinforcement Learning Lab and Griffiths Lab, Princeton University 🐯",
     description:
-      "🔬 Created novel uniformity-only contrastive representation learner that rivals variational auto-encoder accuracy with 11% fewer parameters. Co-authored BuilderBench paper (under review for ICLR 2026). Researching exploration for contrastive reinforcement learning using temporal representations. 🛠️ Tech: JAX, NumPy",
+      "🔬 Created novel uniformity-only contrastive representation learner that rivals variational auto-encoder accuracy with 11% fewer parameters. Co-authored BuilderBench paper. Researching exploration for contrastive reinforcement learning using temporal representations. 🛠️ Tech: JAX, NumPy",
     links: [
       {
         text: "BuilderBench",
