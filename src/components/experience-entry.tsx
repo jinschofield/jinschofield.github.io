@@ -35,8 +35,16 @@ function MediaDisplay({ media }: { media: MediaItem }) {
 
 export function ExperienceEntry({ experience }: { experience: Experience }) {
   const dateColumnMedia = experience.media?.filter(m =>
-    (m.type === 'image' && (m.src.includes('conway.gif') || m.src.includes('cal_proj.png'))) ||
     (m.type === 'video' && m.src.includes('igloo'))) || [];
+
+  const bottomMedia = experience.media?.filter(m =>
+    (m.type === 'image' && (m.src.includes('conway.gif') || m.src.includes('cal_proj.png')))) || [];
+
+  const bottomSidebarLinks = experience.sidebarLinks?.filter(link =>
+    link.imageSrc?.includes('conway-tsne') || link.imageSrc?.includes('caltech-approach')) || [];
+
+  const sidebarOnlyLinks = experience.sidebarLinks?.filter(link =>
+    !link.imageSrc?.includes('conway-tsne') && !link.imageSrc?.includes('caltech-approach')) || [];
 
   const otherMedia = experience.media?.filter(m =>
     !((m.type === 'image' && (m.src.includes('conway.gif') || m.src.includes('cal_proj.png'))) ||
@@ -73,7 +81,7 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
             )}
           </div>
         ))}
-        {experience.sidebarLinks && experience.sidebarLinks.map((link, index) => (
+        {sidebarOnlyLinks.map((link, index) => (
           link.imageSrc ? (
             <div key={index} className="mt-1">
               <Image
@@ -192,6 +200,32 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
             {otherMedia.map((media, index) => (
               <div key={index} className="w-full h-full">
                 <MediaDisplay media={media} />
+              </div>
+            ))}
+          </div>
+        )}
+        {(bottomMedia.length > 0 || bottomSidebarLinks.length > 0) && (
+          <div className="mt-2 flex flex-wrap gap-2">
+            {bottomMedia.map((media, index) => (
+              <div key={`media-${index}`} className="w-24">
+                <Image
+                  src={media.src}
+                  alt={media.alt || 'Project image'}
+                  width={100}
+                  height={100}
+                  className="w-full h-auto rounded-sm border border-gray-200"
+                />
+              </div>
+            ))}
+            {bottomSidebarLinks.map((link, index) => (
+              <div key={`link-${index}`} className="w-32">
+                <Image
+                  src={link.imageSrc!}
+                  alt={link.imageAlt || link.text}
+                  width={150}
+                  height={150}
+                  className="w-full h-auto rounded-sm border border-gray-200"
+                />
               </div>
             ))}
           </div>
