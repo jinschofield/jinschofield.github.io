@@ -205,26 +205,26 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
           </div>
         )}
         {(bottomMedia.length > 0 || bottomSidebarLinks.length > 0) && (
-          <div className="mt-2 flex flex-wrap gap-2">
+          <div className="mt-2 flex flex-wrap gap-2 items-stretch">
             {bottomMedia.map((media, index) => (
-              <div key={`media-${index}`} className="w-24">
+              <div key={`media-${index}`} className="h-24">
                 <Image
                   src={media.src}
                   alt={media.alt || 'Project image'}
                   width={100}
                   height={100}
-                  className="w-full h-auto rounded-sm border border-gray-200"
+                  className="h-full w-auto rounded-sm border border-gray-200"
                 />
               </div>
             ))}
             {bottomSidebarLinks.map((link, index) => (
-              <div key={`link-${index}`} className="w-32">
+              <div key={`link-${index}`} className="h-24">
                 <Image
                   src={link.imageSrc!}
                   alt={link.imageAlt || link.text}
                   width={150}
                   height={150}
-                  className="w-full h-auto rounded-sm border border-gray-200"
+                  className="h-full w-auto rounded-sm border border-gray-200"
                 />
               </div>
             ))}
