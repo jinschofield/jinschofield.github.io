@@ -44,7 +44,7 @@ export const experienceData: Experience[] = [
     ],
     links: [
       {
-        text: "BuilderBench",
+        text: "BuilderBench Website",
         url: "https://rajghugare19.github.io/builderbench/",
         thumbnailSrc: "/images/builderbench-diagram.png",
         thumbnailAlt: "BuilderBench training and evaluation diagram (thumbnail)",
@@ -52,7 +52,7 @@ export const experienceData: Experience[] = [
         thumbnailHeight: 60
       },
       {
-        text: "Arxiv",
+        text: "BuilderBench Arxiv",
         url: "https://arxiv.org/abs/2510.06288"
       },
       {
