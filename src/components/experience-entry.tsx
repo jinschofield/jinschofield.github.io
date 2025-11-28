@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Experience, MediaItem } from "@/data/experience";
+import { Experience, MediaItem, SidebarLink } from "@/data/experience";
 
 function MediaDisplay({ media }: { media: MediaItem }) {
   if (media.type === 'iframe') {
@@ -72,6 +72,17 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
               />
             )}
           </div>
+        ))}
+        {experience.sidebarLinks && experience.sidebarLinks.map((link, index) => (
+          <a
+            key={index}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-1 text-xs text-blue-600 hover:text-blue-800 hover:underline"
+          >
+            {link.text}
+          </a>
         ))}
       </div>
       <div className="col-span-3 flex flex-col">

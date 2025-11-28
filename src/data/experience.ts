@@ -14,6 +14,11 @@ export interface LinkItem {
   thumbnailHeight?: number;
 }
 
+export interface SidebarLink {
+  text: string;
+  url: string;
+}
+
 export interface Experience {
   date: string;
   title: string;
@@ -26,6 +31,7 @@ export interface Experience {
   logo?: string;
   media?: MediaItem[];
   links?: LinkItem[];
+  sidebarLinks?: SidebarLink[];
 }
 
 export const experienceData: Experience[] = [
@@ -42,6 +48,12 @@ export const experienceData: Experience[] = [
         alt: "BuilderBench igloo construction"
       }
     ],
+    sidebarLinks: [
+      {
+        text: "Alignment-Free CL",
+        url: "/Alignment_Free_Contrastive_Learning.pdf"
+      }
+    ],
     links: [
       {
         text: "BuilderBench Website",
@@ -54,10 +66,6 @@ export const experienceData: Experience[] = [
       {
         text: "BuilderBench Arxiv",
         url: "https://arxiv.org/abs/2510.06288"
-      },
-      {
-        text: "Read the alignment-free contrastive learning working paper",
-        url: "/Alignment_Free_Contrastive_Learning.pdf"
       }
     ],
     supervisor: "Prof. Ben Eysenbach & Prof. Tom Griffiths",
@@ -87,17 +95,17 @@ export const experienceData: Experience[] = [
     title: "🤖 Machine Learning Researcher (Diffusion, Language, and Logic)",
     company: "Ramaswamy ML Interpretability Lab, Princeton University",
     description: "🤖 Developed novel conditional diffusion methods with Vikram Ramaswamy for cellular automata synthesis in Conway's Game of Life; researched diffusion for text language data with Diffusion-of-Thoughts.",
-    links: [
-      {
-        text: "Read the paper",
-        url: "/Conditional_Diffusion.pdf"
-      }
-    ],
     media: [
       {
         type: "image",
         src: "/images/conway.gif",
         alt: "Conway's Game of Life simulation"
+      }
+    ],
+    sidebarLinks: [
+      {
+        text: "Conway",
+        url: "/Conditional_Diffusion.pdf"
       }
     ],
     supervisor: "Prof. Vikram Ramaswamy",
@@ -118,17 +126,17 @@ export const experienceData: Experience[] = [
     title: "🤖 AI Research Intern (SURF Program)",
     company: "Perona Computer Vision Lab, Caltech 🔬",
     description: "🚀 Implemented novel in-context learning techniques within latent diffusion models, improving predictive accuracy by 26%.",
-    links: [
-      {
-        text: "Read the paper",
-        url: "/In_Context_Learning_for_Diffusion.pdf"
-      }
-    ],
     media: [
       {
         type: "image",
         src: "/images/cal_proj.png",
         alt: "Caltech Research Project"
+      }
+    ],
+    sidebarLinks: [
+      {
+        text: "Caltech Approach",
+        url: "/In_Context_Learning_for_Diffusion.pdf"
       }
     ],
     supervisor: "Prof. Pietro Perona",
