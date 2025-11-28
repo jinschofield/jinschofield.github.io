@@ -74,28 +74,27 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
           </div>
         ))}
         {experience.sidebarLinks && experience.sidebarLinks.map((link, index) => (
-          <a
-            key={index}
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-1 block"
-          >
-            {link.imageSrc ? (
+          link.imageSrc ? (
+            <div key={index} className="mt-1">
               <Image
                 src={link.imageSrc}
                 alt={link.imageAlt || link.text}
-                width={100}
-                height={100}
-                className="w-full h-auto object-cover rounded-sm border border-gray-200 hover:border-blue-400 transition-colors"
-                style={{ maxHeight: '102px' }}
+                width={200}
+                height={200}
+                className="w-full h-auto rounded-sm border border-gray-200"
               />
-            ) : (
-              <span className="text-xs text-blue-600 hover:text-blue-800 hover:underline">
-                {link.text}
-              </span>
-            )}
-          </a>
+            </div>
+          ) : (
+            <a
+              key={index}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-1 block text-xs text-blue-600 hover:text-blue-800 hover:underline"
+            >
+              {link.text}
+            </a>
+          )
         ))}
       </div>
       <div className="col-span-3 flex flex-col">
