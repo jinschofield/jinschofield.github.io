@@ -12,6 +12,7 @@ export interface LinkItem {
   thumbnailAlt?: string;
   thumbnailWidth?: number;
   thumbnailHeight?: number;
+  compact?: boolean;
 }
 
 export interface SidebarLink {
@@ -68,8 +69,9 @@ export const experienceData: Experience[] = [
         thumbnailHeight: 60
       },
       {
-        text: "BuilderBench Arxiv",
-        url: "https://arxiv.org/abs/2510.06288"
+        text: "Arxiv",
+        url: "https://arxiv.org/abs/2510.06288",
+        compact: true
       },
       {
         text: "Read the alignment-free contrastive learning working paper",
