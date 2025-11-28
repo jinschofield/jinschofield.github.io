@@ -17,6 +17,8 @@ export interface LinkItem {
 export interface SidebarLink {
   text: string;
   url: string;
+  imageSrc?: string;
+  imageAlt?: string;
 }
 
 export interface Experience {
@@ -51,7 +53,9 @@ export const experienceData: Experience[] = [
     sidebarLinks: [
       {
         text: "Alignment-Free CL",
-        url: "/Alignment_Free_Contrastive_Learning.pdf"
+        url: "/Alignment_Free_Contrastive_Learning.pdf",
+        imageSrc: "/images/alignment-free-cl.jpeg",
+        imageAlt: "Alignment-Free Contrastive Learning tSNE visualization"
       }
     ],
     links: [
@@ -105,7 +109,9 @@ export const experienceData: Experience[] = [
     sidebarLinks: [
       {
         text: "Conway",
-        url: "/Conditional_Diffusion.pdf"
+        url: "/Conditional_Diffusion.pdf",
+        imageSrc: "/images/conway-tsne.jpeg",
+        imageAlt: "Conway's Game of Life t-SNE embeddings"
       }
     ],
     supervisor: "Prof. Vikram Ramaswamy",
@@ -136,7 +142,9 @@ export const experienceData: Experience[] = [
     sidebarLinks: [
       {
         text: "Caltech Approach",
-        url: "/In_Context_Learning_for_Diffusion.pdf"
+        url: "/In_Context_Learning_for_Diffusion.pdf",
+        imageSrc: "/images/caltech-approach.jpeg",
+        imageAlt: "Caltech in-context learning approach diagram"
       }
     ],
     supervisor: "Prof. Pietro Perona",
