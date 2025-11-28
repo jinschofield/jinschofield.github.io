@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Experience, MediaItem, SidebarLink } from "@/data/experience";
+import { Experience, MediaItem } from "@/data/experience";
 
 function MediaDisplay({ media }: { media: MediaItem }) {
   if (media.type === 'iframe') {
