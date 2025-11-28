@@ -34,12 +34,13 @@ function MediaDisplay({ media }: { media: MediaItem }) {
 }
 
 export function ExperienceEntry({ experience }: { experience: Experience }) {
-  const dateColumnMedia = experience.media?.filter(m => 
-    m.type === 'image' && 
-    (m.src.includes('conway.gif') || m.src.includes('cal_proj.png'))) || [];
-  
-  const otherMedia = experience.media?.filter(m => 
-    !(m.type === 'image' && (m.src.includes('conway.gif') || m.src.includes('cal_proj.png')))) || [];
+  const dateColumnMedia = experience.media?.filter(m =>
+    (m.type === 'image' && (m.src.includes('conway.gif') || m.src.includes('cal_proj.png'))) ||
+    (m.type === 'video' && m.src.includes('igloo'))) || [];
+
+  const otherMedia = experience.media?.filter(m =>
+    !((m.type === 'image' && (m.src.includes('conway.gif') || m.src.includes('cal_proj.png'))) ||
+      (m.type === 'video' && m.src.includes('igloo')))) || [];
   
   return (
     <div className="grid grid-cols-4 gap-x-1.5 mb-4 group">
@@ -47,17 +48,29 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
         <span className="text-xs text-zinc-500">{experience.date}</span>
         {dateColumnMedia.map((media, index) => (
           <div key={index} className="mt-1 w-full">
-            <Image
-              src={media.src}
-              alt={media.alt || 'Project image'}
-              width={media.src.includes('conway.gif') ? 100 : 160}
-              height={media.src.includes('conway.gif') ? 100 : 40}
-              className={`w-full h-auto object-cover rounded-sm border border-gray-200 ${media.src.includes('conway.gif') ? 'mt-2' : ''}`}
-              style={{
-                aspectRatio: media.src.includes('conway.gif') ? '1/1' : '16/9',
-                maxHeight: media.src.includes('conway.gif') ? '102px' : 'none'
-              }}
-            />
+            {media.type === 'video' ? (
+              <video
+                src={media.src}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-auto object-cover rounded-sm border border-gray-200 mt-2"
+                style={{ aspectRatio: '1/1', maxHeight: '102px' }}
+              />
+            ) : (
+              <Image
+                src={media.src}
+                alt={media.alt || 'Project image'}
+                width={media.src.includes('conway.gif') ? 100 : 160}
+                height={media.src.includes('conway.gif') ? 100 : 40}
+                className={`w-full h-auto object-cover rounded-sm border border-gray-200 ${media.src.includes('conway.gif') ? 'mt-2' : ''}`}
+                style={{
+                  aspectRatio: media.src.includes('conway.gif') ? '1/1' : '16/9',
+                  maxHeight: media.src.includes('conway.gif') ? '102px' : 'none'
+                }}
+              />
+            )}
           </div>
         ))}
       </div>

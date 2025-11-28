@@ -1,5 +1,5 @@
 export interface MediaItem {
-  type: 'iframe' | 'image';
+  type: 'iframe' | 'image' | 'video';
   src: string;
   title?: string;
   alt?: string;
@@ -35,14 +35,25 @@ export const experienceData: Experience[] = [
     company: "Princeton Reinforcement Learning Lab and Griffiths Lab, Princeton University 🐯",
     description:
       "🔬 Created novel uniformity-only contrastive representation learner that rivals variational auto-encoder accuracy with 11% fewer parameters. Co-authored BuilderBench paper. Researching exploration for contrastive reinforcement learning using temporal representations. 🛠️ Tech: JAX, NumPy",
+    media: [
+      {
+        type: "video",
+        src: "/images/9-igloo.mp4",
+        alt: "BuilderBench igloo construction"
+      }
+    ],
     links: [
       {
         text: "BuilderBench",
-        url: "https://arxiv.org/html/2510.06288v1",
+        url: "https://rajghugare19.github.io/builderbench/",
         thumbnailSrc: "/images/builderbench-diagram.png",
         thumbnailAlt: "BuilderBench training and evaluation diagram (thumbnail)",
         thumbnailWidth: 100,
         thumbnailHeight: 60
+      },
+      {
+        text: "Arxiv",
+        url: "https://arxiv.org/abs/2510.06288"
       },
       {
         text: "Read the alignment-free contrastive learning working paper",
