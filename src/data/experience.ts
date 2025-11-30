@@ -40,7 +40,7 @@ export interface Experience {
 export const experienceData: Experience[] = [
   {
     date: "May 2025 — Present",
-    title: "🧠 Reinforcement Learning Researcher",
+    title: "🧠 Reinforcement Learning & Representation Learning Researcher",
     company: "Princeton Reinforcement Learning Lab and Princeton AI Lab, Princeton University 🐯",
     description:
       "🔬 Created novel uniformity-only contrastive representation learner that rivals variational auto-encoder accuracy with 11% fewer parameters. Co-authored BuilderBench paper. Researching exploration for contrastive reinforcement learning using temporal representations. 🛠️ Tech: JAX, NumPy",
