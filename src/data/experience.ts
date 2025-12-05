@@ -122,12 +122,8 @@ export const experienceData: Experience[] = [
     ],
     links: [
       {
-        text: "Conditional Diffusion for Conway's Game of Life Project",
+        text: "Read the Conditional Diffusion for Conway's Game of Life Project",
         url: "https://jinschofield.github.io/Conditional_Diffusion.pdf"
-      },
-      {
-        text: "In Context Learning for Diffusion Project",
-        url: "https://jinschofield.github.io/In_Context_Learning_for_Diffusion.pdf"
       }
     ],
     supervisor: "Prof. Vikram Ramaswamy",
@@ -161,6 +157,12 @@ export const experienceData: Experience[] = [
         url: "/In_Context_Learning_for_Diffusion.pdf",
         imageSrc: "/images/caltech-approach.jpeg",
         imageAlt: "Caltech in-context learning approach diagram"
+      }
+    ],
+    links: [
+      {
+        text: "Read the In Context Learning for Diffusion Project",
+        url: "https://jinschofield.github.io/In_Context_Learning_for_Diffusion.pdf"
       }
     ],
     supervisor: "Prof. Pietro Perona",
