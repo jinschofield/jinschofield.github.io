@@ -120,6 +120,16 @@ export const experienceData: Experience[] = [
         imageAlt: "Conway's Game of Life t-SNE embeddings"
       }
     ],
+    links: [
+      {
+        text: "Conditional Diffusion for Conway's Game of Life Project",
+        url: "https://jinschofield.github.io/Conditional_Diffusion.pdf"
+      },
+      {
+        text: "In Context Learning for Diffusion Project",
+        url: "https://jinschofield.github.io/In_Context_Learning_for_Diffusion.pdf"
+      }
+    ],
     supervisor: "Prof. Vikram Ramaswamy",
     companyUrl: "https://www.cs.princeton.edu/~vr23/",
     logo: "/images/princeton-logo.png"
