@@ -16,7 +16,7 @@ export default function Footer() {
             </p>
           )}
         </div>
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <p className="text-sm text-neutral-500 dark:text-neutral-500 justify">
             Built with{" "}
             <a
@@ -28,7 +28,7 @@ export default function Footer() {
               research-website-template
             </a>
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
