@@ -24,7 +24,7 @@ export function EducationEntry({ education }: { education: Education }) {
             </div>
           )}
           <div>
-            <h3 className="text-sm font-medium font-serif">{education.institution} — {education.degree}</h3>
+            <h3 className="text-sm font-medium font-serif">{education.degree} — {education.institution}</h3>
           {education.advisor && (
             <p className="text-xs text-zinc-500 mt-1 italic">
               Advisor: {education.advisor}
