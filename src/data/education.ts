@@ -13,6 +13,12 @@ export interface Education {
 
 export const educationData: Education[] = [
   {
+    year: "Fall 2026 —",
+    institution: "New York University, Courant Institute of Mathematical Sciences",
+    degree: "Incoming PhD in Computer Science",
+    logo: "/images/nyu-logo.jpg",
+  },
+  {
     year: "Sept. 2022 — May 2026",
     institution: "Princeton University",
     degree: "Bachelors in Computer Science, Minor in Mathematics",
