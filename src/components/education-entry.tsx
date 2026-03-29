@@ -11,22 +11,21 @@ export function EducationEntry({ education }: { education: Education }) {
     <div>
       <div className="grid grid-cols-4 gap-x-1.5 mb-1.5">
         <span className="text-xs text-zinc-500">{education.year}</span>
-        <div className="col-span-3">
-          <div className="flex items-start gap-2">
-            {education.logo && (
-              <div className="w-6 h-6 mt-0.5 flex-shrink-0">
-                <Image
-                  src={education.logo}
-                  alt={`${education.institution} logo`}
-                  width={24}
-                  height={24}
-                  className="rounded-sm object-contain"
-                />
-              </div>
-            )}
+        <div className="col-span-3 flex items-start gap-2">
+          {education.logo && (
+            <div className="w-6 h-6 mt-0.5 flex-shrink-0">
+              <Image
+                src={education.logo}
+                alt={`${education.institution} logo`}
+                width={24}
+                height={24}
+                className="rounded-sm object-contain"
+              />
+            </div>
+          )}
+          <div>
             <h3 className="text-sm font-medium font-serif">{education.institution}</h3>
-          </div>
-          <p className="text-xs text-zinc-600">{education.degree}</p>
+            <p className="text-xs text-zinc-600">{education.degree}</p>
           {education.advisor && (
             <p className="text-xs text-zinc-500 mt-1 italic">
               Advisor: {education.advisor}
@@ -79,6 +78,7 @@ export function EducationEntry({ education }: { education: Education }) {
               )}
             </div>
           )}
+          </div>
         </div>
       </div>
     </div>
