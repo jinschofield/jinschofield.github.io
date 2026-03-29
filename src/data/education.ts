@@ -14,7 +14,7 @@ export interface Education {
 export const educationData: Education[] = [
   {
     year: "Fall 2026 —",
-    institution: "New York University, Courant Institute of Mathematical Sciences",
+    institution: "Courant Institute of Mathematical Sciences, NYU",
     degree: "Incoming PhD in Computer Science",
     logo: "/images/nyu-logo.jpg",
   },
