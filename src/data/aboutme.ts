@@ -19,8 +19,8 @@ export interface AboutMe {
 
 export const aboutMe: AboutMe = {
   name: "Jin Schofield",
-  title: "Computer Science and Math",
-  institution: "Incoming PhD @ Courant Institute, NYU | Princeton University",
+  title: "Incoming CS PhD @ Courant Institute, NYU",
+  institution: "Computer Science and Math @ Princeton University",
   description:
     "Hi! 👋 I'm Jin, a senior at Princeton studying CS and math, and an incoming CS PhD student at the Courant Institute, NYU. I research <strong>reinforcement learning and representation learning</strong>, focusing on exploration algorithms using contrastive representations for combinatorial and strategic environments. I also have industry experience researching and engineering computationally efficient computer vision models for <strong>real-time detection</strong> in autonomous precision robotics. I am experienced in and very passionate about combining <strong>fundamental ML research</strong> (parameter-efficient architectures, self-supervised learning) with <strong>production-grade engineering</strong> (i.e. latency reduction, scalability). I want to contribute to the world by advancing general-purpose agents, embodied and otherwise, through representation learning and efficient architectures!",
   email: "jin.schofield@princeton.edu",
